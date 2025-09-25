@@ -6,6 +6,6 @@
 <body>
     <h1>Привет из index.jsp!</h1>
     <p>Это стартовая страница вашего приложения.</p>
-    <a href="hello">Перейти к сервлету HelloServlet</a>
+    <a href="first">Перейти к сервлету HelloServlet</a>
 </body>
 </html>
