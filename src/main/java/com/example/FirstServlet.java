@@ -6,6 +6,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 public class FirstServlet extends HttpServlet {
 
@@ -13,7 +14,9 @@ public class FirstServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        resp.setContentType("text/html;charset=UTF-8");
-        resp.getWriter().write("<h1>Hello from FirstServlet (no annotation)!</h1>");
+        PrintWriter pw = resp.getWriter();
+        pw.println("<html>");
+        pw.println("<h1>Hello World!</h1>");
+        pw.println("</html>");
     }
 }

@@ -1,11 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Добро пожаловать</title>
+    <title>First JSP!</title>
 </head>
 <body>
-    <h1>Привет из index.jsp!</h1>
-    <p>Это стартовая страница вашего приложения.</p>
-    <a href="first">Перейти к сервлету HelloServlet</a>
+    <h1>Testing JSP</h1>
+    <p>
+        <%
+            for(int i = 0; i < 10; i++) {
+                out.println("<p>" + "Hello " + i + "</p>");
+            }
+        %>
+    </p>
 </body>
 </html>
