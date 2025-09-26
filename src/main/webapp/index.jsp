@@ -6,11 +6,11 @@
 <body>
     <h1>Testing JSP</h1>
     <p>
-        <%@ page import="java.util.Date, com.example.logic.TestClass" %>
-        <% TestClass testClass = new TestClass(); %>
-        <%=
-           testClass.getInfo()
+       <%
+            String name = request.getParameter("name");
         %>
+
+       <%= "HI, " + name %>
     </p>
 </body>
 </html>
