@@ -11,12 +11,12 @@
 
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
-        <url-pattern>/first</url-pattern>
+        <url-pattern>/test-servlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
         <servlet-name>FirstJSP</servlet-name>
-        <jsp-file>/index.jsp</jsp-file>
+        <jsp-file>/testJsp.jsp</jsp-file>
     </servlet>
 
     <servlet-mapping>

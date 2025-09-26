@@ -5,12 +5,5 @@
 </head>
 <body>
     <h1>Testing JSP</h1>
-    <p>
-       <%
-            String name = request.getParameter("name");
-        %>
-
-       <%= "HI, " + name %>
-    </p>
 </body>
 </html>
