@@ -6,10 +6,10 @@
 <body>
     <h1>Testing JSP</h1>
     <p>
-        <%
-            for(int i = 0; i < 10; i++) {
-                out.println("<p>" + "Hello " + i + "</p>");
-            }
+        <%@ page import="java.util.Date, com.example.logic.TestClass" %>
+        <% TestClass testClass = new TestClass(); %>
+        <%=
+           testClass.getInfo()
         %>
     </p>
 </body>
