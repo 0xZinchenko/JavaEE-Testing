@@ -18,7 +18,7 @@ public class FirstServlet extends HttpServlet {
 
         Cart cart = (Cart) session.getAttribute("cart");
 
-        String name = request.getParameter("cart");
+        String name = request.getParameter("name");
         int quantity = Integer.parseInt(request.getParameter("quantity"));
 
         if (cart == null) {
